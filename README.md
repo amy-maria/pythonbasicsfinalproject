@@ -1,46 +1,30 @@
-# Python Basics Final Project: Python Basics Final Project
+# Python Weather Forecast Tool
 
-A basic Python application, initially created in Replit, that queries the user for a location and returns daily and future weather forecasts using markup. The application also includes error catching for data failures. 
+A Python command-line application, initially created in Replit, that queries the user for a location and returns daily and future weather forecasts. The application also includes error catching for data failures. 
 
 ## 🚀 Features
-*   **Feature 1:** Real-time user input validation.
-*   **Feature 2:** API calls to open source weather app
-*   **Feature 3:** Error catching
-*   **Feature 4:** .env file and file handling for API keys and URI's
+*   **Data Validation** Real-time user input validation before hitting external network endpoints, reducing unnecessary API calls.
+*   **API** Connects seamlessly to third-party REST APIs (SheCodes Weather API) utilizing the `requests` library to parse structured JSON weather 
+*   **Exception Handling** Implemented try-except error catching blocks to gracefully handle network dropouts, timeout anomalies, and invalid API response without crashing the runtime.
+*   **Environment Isolation** Uses'python.dotenv' file handling to isolate private API keys and URI's.
+*   **Enhanced UX Terminal Formatting:** Utilizes the `Rich` text library to render tabular multi-day forecast metrics, progress meters, and color-coded status elements directly inside the console.
 
 ## 🛠️ Tech Stack
-*   **Language:** Python 3
-*   **Libraries used:** Rich text, datetime, requests, dotenv
+*   **Core Engine:** Python 3
+*   **Network Layer:** `requests` 
+*   **Security & Configuration:** `python-dotenv`
+*   **UI/UX Formatting:** `Rich` terminal text compilation
 
-## 📦 Getting Started
+## 🌐 Live Demonstration & Portfolio
 
-Follow these steps to get a copy of the project up and running on your local machine.
+To protect secure API infrastructure and private environment credentials, local execution requires private access tokens. You can view a complete functional walkthrough, system architecture documentation, and the live interface directly on my professional portfolio:
 
-### Prerequisites
-Make sure you have Python installed. You can check by running:
-\`\`\`bash
-python3 --version
-\`\`\`
+👉 **[View Project Showcase on portfolio site] https://amyrowell.dev/ **
 
-### Installation & Running the App
-1. Clone the repository:
-   \`\`\`bash
-   git clone https://github.com/amy-maria/pythonbasicsfinalproject.git
-   \`\`\`
-2. Navigate into the project folder:
-   \`\`\`bash
-   cd pythonbasicsfinalproject
-   \`\`\`
-3. Run the main script:
-   \`\`\`bash
-   python3 main.py
-   \`\`\`
+## 📝 Insights & Competencies
+Developing this application served as a sandbox to demonstrate key modern engineering practices:
 
-## 📝 What I Learned
+Production-Grade File I/O: Managing runtime environments and file streams securely without compromising credential architecture.
 
-In this final project, I demonstrated:
-*   Handling file I/O operations in Python.
-*   Structuring clean loops and conditional statements.
-*   Handling API requests
-*   Handling .env files in Python
-*   Debugging Git merge conflicts
+Data Layout Serialization: Parsing, sorting, and transforming raw API JSON endpoints into human-readable data layouts.
+
