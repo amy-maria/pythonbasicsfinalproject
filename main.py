@@ -5,17 +5,19 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
+city = os.getenv("DEFAULT_CITY", "Miami").strip()
 API_KEY = os.getenv("API_KEY")
 API_URL = os.getenv("API_URL")
 FORECAST_URL = os.getenv("FORECAST_URL")
 # ask for city
 print("[purple bold]Weather Forecast[/purple bold]")
-city = input("\nEnter city name: ")
-city = city.strip()
+# Use if input is allowed, will not work with Render
+# city = input("\nEnter city name: ")
+# city = city.strip()
 
 # need error checking if no city entered
 if city:
-    city
+    print(f"\nFetching weather for: {city}")
 else:
     print("Please enter a valid city name.")
 
