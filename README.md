@@ -1,13 +1,13 @@
 # Python Weather Forecast Tool
 
-A Python command-line application, initially created in Replit, that queries the user for a location and returns daily and future weather forecasts. The application also includes error catching for data failures. 
+Initially a Python command-line application created in Replit, I added Flask to the program for more functionality. The app returns the weather inforamtion for a location and returns daily and future weather forecasts. The application also includes error catching for data failures. 
 
 ## 🚀 Features
 *   **Data Validation** Real-time user input validation before hitting external network endpoints, reducing unnecessary API calls.
 *   **API** Connects seamlessly to third-party REST APIs (SheCodes Weather API) utilizing the `requests` library to parse structured JSON weather data.
 *   **Exception Handling** Implemented try-except error catching blocks to gracefully handle network dropouts, timeout anomalies, and invalid API response without crashing the runtime.
 *   **Environment Isolation** Uses'python.dotenv' file handling to isolate private API keys and URI's.
-*   **Enhanced UX Terminal Formatting** Utilizes the `Rich` text library to render tabular multi-day forecast metrics, progress meters, and color-coded status elements directly inside the console.
+*   **Enhanced UX Terminal Formatting** Utilized the `Rich` text library to render tabular multi-day forecast metrics, progress meters, and color-coded status elements directly inside the console as a CLI. To render the app in Render, I wrapped my code using Flask and made some modifations to generated HTML and minor CSS styling. 
 
 ## 🛠️ Tech Stack
 *   **Core Engine:** Python 3
