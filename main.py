@@ -106,7 +106,7 @@ def home(city=None):
          body {{ background-color: #DBD4ff; 
          color:#723480;
         font-family: Arial, sans-serif; 
-        margin: 40px auto;
+        margin: 60px auto;
         padding: 20px;
         border-radius: 12px;
         border-color: #808034;
